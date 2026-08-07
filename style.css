@@ -1580,5 +1580,16 @@ footer {
 .project-row > .project-details[open] > summary::after { content:none !important; display:none !important; }
 
 
-/* v13: fit the descriptive project title cleanly in the visual panel */
-.visual-triage .triage-mark { font-size: clamp(2.8rem, 5.4vw, 5.25rem) !important; letter-spacing: -.055em !important; white-space: nowrap; }
+/* v14 — lighter MEDI-TRIAGE title treatment */
+.triage-mark {
+  font-size: clamp(2.75rem, 5vw, 4.65rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 0.98 !important;
+}
+
+@media (max-width: 720px) {
+  .triage-mark {
+    font-size: clamp(2.35rem, 11vw, 3.7rem) !important;
+  }
+}

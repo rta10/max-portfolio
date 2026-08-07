@@ -18,3 +18,8 @@ Replace placeholder contact and GitHub profile links in `index.html` with the cl
 
 
 Version 12: featured project visual title changed from ATMIST to MEDI-TRIAGE.
+
+
+## v14
+- Reduced MEDI-TRIAGE title weight and size for a cleaner visual.
+- Removed the About section, About nav item, and About hero button.
