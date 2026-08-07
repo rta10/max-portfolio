@@ -1880,3 +1880,20 @@ footer {
 @media (max-width:760px){
   .hud-mark { font-size: clamp(2.15rem, 10vw, 3.3rem); }
 }
+
+
+/* v23 — unified project-card title typography */
+.project-summary-grid .project-card-body h3,
+.project-row.featured-project .project-summary-grid .project-card-body h3 {
+  margin: 0 0 12px !important;
+  font-size: 1.65rem !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.03em !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 760px) {
+  .project-summary-grid .project-card-body h3,
+  .project-row.featured-project .project-summary-grid .project-card-body h3 {
+    font-size: 1.5rem !important;
+  }
+}
