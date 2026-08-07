@@ -2109,3 +2109,39 @@ footer {
   font-size: .68rem;
   font-style: normal;
 }
+
+
+/* v30 — live certification card */
+.credential-live {
+  color: inherit;
+  cursor: pointer;
+}
+.credential-live .credential-provider {
+  margin: 0 0 6px;
+  color: #9fb0c6;
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+.credential-live .credential-meta {
+  margin-top: 6px;
+  line-height: 1.45;
+}
+.credential-google {
+  background: #15263e;
+  color: #8fb8ff;
+  font-size: 1rem;
+}
+.credential-link-label {
+  align-self: center;
+  color: #a9b9cc;
+  font-size: .74rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.credential-live:hover .credential-link-label { color: var(--text); }
+@media (max-width: 760px) {
+  .credential-live { grid-template-columns: auto 1fr; }
+  .credential-link-label { grid-column: 2; justify-self: start; margin-top: 4px; }
+}

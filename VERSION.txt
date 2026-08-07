@@ -1,2 +1,2 @@
-Client Portfolio — v29
-Fixed Legacy Optics image reference caption layout and filename styling.
+Client Portfolio — v30
+Added Google AI Coursera specialization credential.
