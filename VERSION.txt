@@ -1,2 +1,2 @@
-Client Portfolio — v30
-Added Google AI Coursera specialization credential.
+Client Portfolio — v31
+Polished Certifications layout and Google AI credential card.
