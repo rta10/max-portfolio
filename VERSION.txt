@@ -1,2 +1,2 @@
-Client Portfolio — v24
-Restored complete Smart HUD Riser Project 04 and unified all project-card headings
+Client Portfolio — v25
+Rebuilt NotebookLM project section from original full-HTML document version and kept all other projects intact.
