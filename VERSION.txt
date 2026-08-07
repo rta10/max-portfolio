@@ -1,2 +1,2 @@
-Client Portfolio — v35
-Added Artificial Intelligence Essentials V2 credential (Coursera, authorized by IBM), issued May 8, 2026.
+Client Portfolio — v36
+Added Google AI Essentials V1 Credly credential, issued June 10, 2026.
