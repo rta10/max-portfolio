@@ -1,2 +1,2 @@
-Client Portfolio — v32
-Added Google Prompting Essentials Coursera credential.
+Client Portfolio — v33
+Added Google AI Essentials Coursera credential.
