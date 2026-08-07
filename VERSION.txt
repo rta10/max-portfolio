@@ -1,2 +1,2 @@
-Client Portfolio — v25
-Rebuilt NotebookLM project section from original full-HTML document version and kept all other projects intact.
+Client Portfolio — v26
+NotebookLM section rebuilt from original source with isolated NB2 HTML/CSS.
