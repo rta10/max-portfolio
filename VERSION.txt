@@ -1,2 +1,2 @@
-Client Portfolio — v40
-Added AI For Everyone (DeepLearning.AI / Coursera) credential.
+Client Portfolio — v41
+Added Use AI Responsibly Coursera credential.
