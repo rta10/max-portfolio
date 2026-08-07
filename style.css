@@ -2302,3 +2302,15 @@ footer {
 @media (max-width: 620px) {
   .credential-ibm-card { grid-column: auto; }
 }
+
+
+/* v35 — second IBM/Coursera credential on row two */
+.credential-ibm-ai {
+  grid-column: 2;
+}
+@media (max-width: 900px) {
+  .credential-ibm-ai { grid-column: 1 / -1; }
+}
+@media (max-width: 620px) {
+  .credential-ibm-ai { grid-column: auto; }
+}

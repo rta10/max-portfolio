@@ -1,2 +1,2 @@
-Client Portfolio — v34
-Added Product Management Essentials credential (Coursera, authorized by IBM) as first card on a new certification row.
+Client Portfolio — v35
+Added Artificial Intelligence Essentials V2 credential (Coursera, authorized by IBM), issued May 8, 2026.
