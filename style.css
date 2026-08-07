@@ -1727,3 +1727,42 @@ footer {
 }
 .notebook-submark { display: none !important; }
 @media (max-width: 760px) { .notebook-mark { font-size: clamp(2.15rem, 10vw, 3.3rem) !important; } }
+
+
+/* v20 — full NotebookLM document as native HTML */
+.notebook-document-content .notebook-accent { color:#ffd56c; font-weight:800; }
+.notebook-document-content .document-section { padding-top:34px; margin-top:34px; }
+.notebook-document-content .document-section:first-of-type { margin-top:24px; }
+.notebook-document-content .document-section h5 { margin:0 0 18px; font-size:1.15rem; color:var(--text); }
+.notebook-document-content .document-section p { max-width:none; }
+.notebook-document-content .prompt-block {
+  margin:0 0 26px;
+  padding:18px 20px;
+  border:1px solid rgba(144,190,106,.28);
+  border-radius:14px;
+  background:rgba(116,159,82,.09);
+  color:#b9d99e;
+  font-weight:650;
+}
+.notebook-document-content .prompt-block strong { color:#c9e9ad; }
+.document-table-wrap { width:100%; overflow-x:auto; margin:18px 0 6px; }
+.notebook-table { width:100%; min-width:760px; border-collapse:collapse; table-layout:fixed; }
+.notebook-table th, .notebook-table td { padding:20px 18px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+.notebook-table th { color:var(--text); font-size:.82rem; letter-spacing:.02em; }
+.notebook-table td { color:var(--muted); line-height:1.62; }
+.notebook-table td strong { color:var(--text); }
+.notebook-table th:nth-child(1), .notebook-table td:nth-child(1) { width:24%; }
+.notebook-table th:nth-child(2), .notebook-table td:nth-child(2) { width:38%; }
+.notebook-table th:nth-child(3), .notebook-table td:nth-child(3) { width:38%; }
+.document-numbered-list, .document-bullet-list { margin:18px 0 0; padding-left:1.5rem; color:var(--muted); }
+.document-numbered-list li, .document-bullet-list li { margin:0 0 14px; padding-left:.35rem; line-height:1.65; }
+.document-numbered-list strong, .document-bullet-list strong { color:var(--text); }
+.document-inline-link { color:#d6eabb; font-weight:750; text-decoration:underline; text-underline-offset:3px; }
+.project-complete-line { margin-top:28px !important; text-align:center; color:var(--muted); letter-spacing:.08em; font-size:.78rem; }
+.source-url-list { margin:14px 0 24px; padding-left:1.5rem; }
+.source-url-list li { margin-bottom:10px; color:var(--muted); overflow-wrap:anywhere; }
+.source-url-list a { color:#b9d99e; }
+@media (max-width:760px) {
+  .notebook-document-content .document-section { padding-top:26px; margin-top:26px; }
+  .notebook-document-content .prompt-block { padding:16px; }
+}
