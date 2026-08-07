@@ -862,3 +862,65 @@ footer {
   .next-project a { align-items:flex-start; flex-direction:column; }
   .handoff-mini { grid-template-columns:1fr; }
 }
+
+
+/* Portfolio row layout v3 — explicit full-width rows */
+.project-list {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 34px !important;
+}
+
+.project-row {
+  width: 100% !important;
+  max-width: none !important;
+  overflow: hidden;
+  display: grid !important;
+  grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr) !important;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 60px rgba(0,0,0,.38);
+}
+
+.project-row .project-visual {
+  min-height: 330px;
+}
+
+.project-row.featured-project .project-visual {
+  min-height: 440px;
+}
+
+.project-row.featured-project h3 {
+  font-size: 2.2rem;
+}
+
+.project-row.project-placeholder {
+  opacity: .78;
+}
+
+.project-row.project-placeholder .project-card-body {
+  min-height: 330px;
+}
+
+@media (max-width: 900px) {
+  .project-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-row .project-visual,
+  .project-row.featured-project .project-visual {
+    min-height: 250px;
+  }
+
+  .project-row.project-placeholder .project-card-body {
+    min-height: auto;
+  }
+}
