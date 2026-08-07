@@ -2005,3 +2005,47 @@ footer {
   .legacy-name-list { columns:1; }
   .legacy-image-grid { grid-template-columns:1fr; }
 }
+
+
+/* v28 — Legacy Optics image/reference labels */
+.legacy-iteration-gallery figcaption,
+.legacy-final-figure figcaption {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.legacy-iteration-gallery figcaption strong,
+.legacy-final-figure figcaption strong {
+  color: var(--text);
+  font-size: .92rem;
+}
+.legacy-ref-label {
+  margin-top: 2px;
+  color: #a7b3c6;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.legacy-iteration-gallery figcaption code,
+.legacy-final-figure figcaption code {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255,255,255,.025);
+  color: #c7d3e3;
+  font-size: .72rem;
+}
+.legacy-ref-unspecified {
+  font-size: .76rem;
+  font-style: italic;
+  color: var(--muted);
+}
+.legacy-final-figure { margin: 0; }
+.legacy-final-figure img { display:block; width:100%; height:auto; border-radius:14px; }

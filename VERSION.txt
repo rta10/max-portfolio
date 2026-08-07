@@ -1,2 +1,2 @@
-Client Portfolio — v27
-Added final Project 05: Legacy Optics – Spring 2027 Campaign.
+Client Portfolio — v28
+Legacy Optics image captions now include phase names and source-document reference filenames.
