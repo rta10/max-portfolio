@@ -1,2 +1,2 @@
-Client Portfolio — v50
-Maintenance cleanup: removed redundant/obsolete CSS, improved metadata, added image dimensions/lazy loading, focus visibility, anchor offsets, and reduced-motion support.
+Client Portfolio — v52
+Generalized/anonymous portfolio metadata retained; correct email and GitHub contact buttons restored in Contact section.
