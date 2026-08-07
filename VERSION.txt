@@ -1,2 +1,2 @@
-Client Portfolio — v44
-Updated certifications intro copy and aligned NotebookLM left visual header with other project visuals.
+Client Portfolio — v45
+Increased hero preview tilt slightly.
