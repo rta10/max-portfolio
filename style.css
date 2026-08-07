@@ -279,23 +279,6 @@ a {
   font-weight: 700;
 }
 
-.preview-lines {
-  margin-top: 38px;
-  display: grid;
-  gap: 10px;
-}
-
-.preview-lines span {
-  height: 8px;
-  border-radius: 999px;
-  background: #293447;
-}
-
-.preview-lines span:nth-child(1) { width: 91%; }
-.preview-lines span:nth-child(2) { width: 78%; }
-.preview-lines span:nth-child(3) { width: 86%; }
-.preview-lines span:nth-child(4) { width: 58%; }
-
 /* General sections */
 
 .section {
@@ -323,8 +306,7 @@ a {
   text-transform: uppercase;
 }
 
-.section-heading h2,
-.two-column h2 {
+.section-heading h2 {
   margin: 0;
   font-size: clamp(2.2rem, 4vw, 3.8rem);
   line-height: 1.03;
@@ -503,25 +485,6 @@ a {
   text-underline-offset: 4px;
 }
 
-/* About */
-
-.two-column {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.prose {
-  max-width: 700px;
-  color: #a7b1c0;
-  font-size: 1.05rem;
-}
-
-.prose p:first-child {
-  margin-top: 0;
-}
-
 /* Credentials */
 
 .credential-grid {
@@ -649,8 +612,7 @@ footer {
 
 @media (max-width: 900px) {
   .hero-grid,
-  .section-heading,
-  .two-column {
+  .section-heading {
     grid-template-columns: 1fr;
   }
 
@@ -1580,21 +1542,6 @@ footer {
 .project-row > .project-details[open] > summary::after { content:none !important; display:none !important; }
 
 
-/* v14 — lighter MEDI-TRIAGE title treatment */
-.triage-mark {
-  font-size: clamp(2.75rem, 5vw, 4.65rem) !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.035em !important;
-  line-height: 0.98 !important;
-}
-
-@media (max-width: 720px) {
-  .triage-mark {
-    font-size: clamp(2.35rem, 11vw, 3.7rem) !important;
-  }
-}
-
-
 /* v15 — lighter Medi-Triage title */
 .triage-mark {
   font-size: clamp(2.35rem, 4.6vw, 4.25rem) !important;
@@ -2337,3 +2284,36 @@ footer {
   margin-left: 0;
 }
 @media (max-width: 760px) { .visual-notebook .notebook-visual-copy { margin-left: -2px; } }
+
+
+/* v50 — maintenance, accessibility, and performance polish */
+#projects, #credentials, #contact {
+  scroll-margin-top: 88px;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .button:hover,
+  .credential-card:hover,
+  .project-card:hover {
+    transform: none !important;
+  }
+}

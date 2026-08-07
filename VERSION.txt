@@ -1,2 +1,2 @@
-Client Portfolio — v48
-Shortened hero headline to: Ideas shaped into intelligent experiences.
+Client Portfolio — v50
+Maintenance cleanup: removed redundant/obsolete CSS, improved metadata, added image dimensions/lazy loading, focus visibility, anchor offsets, and reduced-motion support.
