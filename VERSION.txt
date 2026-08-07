@@ -1,2 +1,2 @@
-Client Portfolio — v45
-Increased hero preview tilt slightly.
+Client Portfolio — v47
+Updated hero headline and supporting copy to be more specific to the portfolio.
