@@ -1,0 +1,3 @@
+Medical Triage Handoff portfolio build
+Version: 2026-08-07-v1
+Homepage should show Medical Triage Handoff Assistant as Featured Project.
