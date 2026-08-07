@@ -1813,3 +1813,70 @@ footer {
   .renegade-project .project-visual { min-height:280px; }
   .renegade-image-grid { grid-template-columns:1fr; }
 }
+
+/* v22 — Guardian Smart HUD Riser project */
+.visual-hud {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 20%, rgba(45, 175, 255, .28), transparent 25%),
+    radial-gradient(circle at 18% 88%, rgba(0, 96, 160, .28), transparent 34%),
+    linear-gradient(145deg, #071923 0%, #0b3347 50%, #0d5773 100%);
+}
+.visual-hud::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.72), transparent);
+  pointer-events: none;
+}
+.hud-visual-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.hud-mark {
+  font-size: clamp(2.35rem, 4.6vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  color: #f5f8fb;
+}
+.hud-document-content .prompt-block {
+  margin: 18px 0 26px;
+  padding: 18px 20px;
+  border: 1px solid rgba(91, 190, 241, .22);
+  border-radius: 14px;
+  background: rgba(20, 105, 148, .10);
+}
+.hud-iteration-section { display: grid; gap: 4px; }
+.hud-figure {
+  margin: 10px auto 0;
+  width: min(100%, 600px);
+}
+.hud-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 24px 55px rgba(0,0,0,.24);
+}
+.hud-figure figcaption {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+@media (max-width:760px){
+  .hud-mark { font-size: clamp(2.15rem, 10vw, 3.3rem); }
+}
