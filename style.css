@@ -2283,3 +2283,22 @@ footer {
   .credential-live { grid-column: auto; }
   .credential-details { padding-left: 0; }
 }
+
+
+/* v34 — IBM/Coursera credential */
+.credential-ibm-card {
+  grid-column: 1;
+}
+.credential-ibm {
+  width: 48px;
+  font-size: .64rem;
+  letter-spacing: -.01em;
+  background: linear-gradient(145deg, #173c66, #245a8f);
+  color: #a9d4ff;
+}
+@media (max-width: 900px) {
+  .credential-ibm-card { grid-column: 1 / -1; }
+}
+@media (max-width: 620px) {
+  .credential-ibm-card { grid-column: auto; }
+}
