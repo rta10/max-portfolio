@@ -1,2 +1,2 @@
-Client Portfolio — v39
-Added Google AI for Content Creation Credly credential.
+Client Portfolio — v40
+Added AI For Everyone (DeepLearning.AI / Coursera) credential.

@@ -2314,3 +2314,12 @@ footer {
 @media (max-width: 620px) {
   .credential-ibm-ai { grid-column: auto; }
 }
+
+
+/* v40 — DeepLearning.AI credential */
+.credential-ai {
+  font-size: .78rem;
+  letter-spacing: .04em;
+  font-weight: 800;
+}
+.credential-deeplearning .credential-provider { letter-spacing: .04em; }
