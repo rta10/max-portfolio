@@ -924,3 +924,125 @@ footer {
     min-height: auto;
   }
 }
+
+/* Expandable project details v4 */
+.project-teaser {
+  margin: 0;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.project-details {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.project-details summary {
+  list-style: none;
+  padding: 20px 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #dce8f4;
+  font-size: .86rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary:hover {
+  color: #7ce4da;
+}
+
+.details-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #33475c;
+  border-radius: 50%;
+  background: #111d2a;
+}
+
+.details-icon::before,
+.details-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 1.5px;
+  border-radius: 999px;
+  background: #8da4b9;
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.details-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.project-details[open] .details-icon::after {
+  opacity: 0;
+}
+
+.project-details[open] summary {
+  padding-bottom: 18px;
+}
+
+.project-details-content {
+  padding: 0 0 2px;
+  animation: projectDetailReveal .22s ease-out;
+}
+
+.detail-section {
+  padding: 18px 0;
+  border-top: 1px solid rgba(45, 61, 83, .72);
+}
+
+.detail-section:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.detail-label {
+  margin: 0 0 8px !important;
+  color: #78ddd5 !important;
+  font-size: .68rem !important;
+  font-weight: 850;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.detail-section p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+.project-details .project-highlights {
+  margin-top: 20px;
+}
+
+.project-details .project-links {
+  margin-top: 22px;
+}
+
+@keyframes projectDetailReveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-details-content { animation: none; }
+  .details-icon::before,
+  .details-icon::after { transition: none; }
+}

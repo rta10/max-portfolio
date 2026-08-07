@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Showcase</title>
   <meta name="description" content="Selected projects exploring AI-assisted workflows, structured information, and visual concepts.">
-  <link rel="stylesheet" href="style.css?v=triage-rows-v3-20260807">
+  <link rel="stylesheet" href="style.css?v=triage-expand-v4-20260807">
 </head>
 <body>
 
@@ -95,38 +95,64 @@
                 <span>Featured</span><span>Healthcare</span><span>AI Workflow</span>
               </div>
               <h3>Medical Triage Handoff Assistant</h3>
-              <div class="project-summary">
-                <p>
-                  A healthcare workflow concept designed to make ambulance-to-hospital handoffs faster,
-                  clearer, and more consistent. During transport, a paramedic can relay patient information
-                  through voice-to-text; the application then organizes that unstructured report into a
-                  standardized digital handoff card for emergency department staff to review before arrival.
-                </p>
-                <p>
-                  The workflow is structured around the ATMIST handover framework, capturing Age/Gender,
-                  Time, Mechanism or Medical History, Injuries or Illness, Signs and vital trends, and Treatment.
-                  The concept also adds an explicit Response to Treatment field so the receiving team can quickly
-                  understand whether the patient's condition improved, remained stable, or deteriorated after care.
-                </p>
-                <p>
-                  Beyond the handoff card itself, the prototype explores speech recognition, AI-assisted ATMIST
-                  extraction, clinical risk guardrails, encrypted transmission concepts, digital sign-off, audit
-                  trails, and interactive simulation cases. Together, these elements demonstrate an end-to-end
-                  approach to turning field information into structured, reviewable clinical data.
-                </p>
-              </div>
-              <div class="project-highlights" aria-label="Project highlights">
-                <span>Voice-to-text intake</span>
-                <span>ATMIST extraction</span>
-                <span>Clinical guardrails</span>
-                <span>Secure data workflow</span>
-                <span>Digital sign-off</span>
-                <span>Interactive simulation</span>
-              </div>
-              <div class="project-links">
-                <a href="projects/medical-triage-handoff/">View case study</a>
-                <a href="https://medical-handoff-assistant-672509862294.us-west2.run.app" target="_blank" rel="noopener noreferrer">Launch simulation ↗</a>
-              </div>
+              <p class="project-teaser">
+                An AI-assisted healthcare workflow prototype that converts a paramedic's spoken field report
+                into a structured ATMIST handoff card for emergency department staff before the ambulance arrives.
+              </p>
+
+              <details class="project-details">
+                <summary>
+                  <span>View full project details</span>
+                  <span class="details-icon" aria-hidden="true"></span>
+                </summary>
+
+                <div class="project-details-content">
+                  <div class="detail-section">
+                    <p class="detail-label">Overview</p>
+                    <p>
+                      The Medical Triage Handoff Assistant is a healthcare workflow concept designed to make
+                      ambulance-to-hospital communication faster, clearer, and more consistent. During transport,
+                      a paramedic can relay patient information through voice-to-text; the application organizes
+                      that unstructured report into a standardized digital handoff card that emergency department
+                      staff can review before arrival.
+                    </p>
+                  </div>
+
+                  <div class="detail-section">
+                    <p class="detail-label">Structured handoff</p>
+                    <p>
+                      The workflow uses the ATMIST handover framework to capture Age/Gender, Time, Mechanism or
+                      Medical History, Injuries or Illness, Signs and vital trends, and Treatment. The concept also
+                      adds an explicit Response to Treatment field so the receiving team can quickly see whether the
+                      patient improved, remained stable, or deteriorated after care.
+                    </p>
+                  </div>
+
+                  <div class="detail-section">
+                    <p class="detail-label">Prototype architecture</p>
+                    <p>
+                      Beyond the handoff card itself, the prototype explores speech recognition, AI-assisted ATMIST
+                      extraction, clinical risk guardrails, encrypted transmission concepts, digital sign-off, audit
+                      trails, and interactive simulation cases. Together, these elements demonstrate an end-to-end
+                      approach to turning field information into structured, reviewable clinical data.
+                    </p>
+                  </div>
+
+                  <div class="project-highlights" aria-label="Project highlights">
+                    <span>Voice-to-text intake</span>
+                    <span>ATMIST extraction</span>
+                    <span>Clinical guardrails</span>
+                    <span>Secure data workflow</span>
+                    <span>Digital sign-off</span>
+                    <span>Interactive simulation</span>
+                  </div>
+
+                  <div class="project-links">
+                    <a href="projects/medical-triage-handoff/">View dedicated case study</a>
+                    <a href="https://medical-handoff-assistant-672509862294.us-west2.run.app" target="_blank" rel="noopener noreferrer">Launch simulation ↗</a>
+                  </div>
+                </div>
+              </details>
             </div>
           </article>
 

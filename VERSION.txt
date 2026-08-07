@@ -1,3 +1,1 @@
-Client Portfolio — Medical Triage v3
-Explicit full-width project rows.
-Built 2026-08-07.
+Client Portfolio – Triage Expandable Project Rows v4 (2026-08-07)
