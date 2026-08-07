@@ -2323,3 +2323,17 @@ footer {
   font-weight: 800;
 }
 .credential-deeplearning .credential-provider { letter-spacing: .04em; }
+
+
+/* v44 — certification intro copy and NotebookLM header alignment */
+.visual-notebook .notebook-visual-copy {
+  width: 100%;
+  align-items: flex-start !important;
+  justify-content: flex-start;
+  margin-left: -4px;
+}
+.visual-notebook .notebook-mark {
+  display: block;
+  margin-left: 0;
+}
+@media (max-width: 760px) { .visual-notebook .notebook-visual-copy { margin-left: -2px; } }

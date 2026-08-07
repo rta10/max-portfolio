@@ -1,2 +1,2 @@
-Client Portfolio — v43
-Updated Certifications terminology across the site and added Google AI for Data Analysis.
+Client Portfolio — v44
+Updated certifications intro copy and aligned NotebookLM left visual header with other project visuals.
