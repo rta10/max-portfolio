@@ -1,149 +1,141 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Triage Handoff Assistant | Project Showcase</title>
-  <meta name="description" content="Case study for an AI-assisted emergency medical handoff concept using structured ATMIST data.">
-  <link rel="stylesheet" href="../../style.css?v=triage-20260807">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Medical Triage Handoff Assistant | Project Showcase</title>
+<meta content="Case study for an AI-assisted emergency medical handoff concept using structured ATMIST data." name="description"/>
+<link href="../../style.css?v=layout-v8" rel="stylesheet"/>
 </head>
 <body class="project-page">
-  <header class="site-header">
-    <div class="wrap nav-wrap">
-      <a class="brand" href="../../index.html"><span class="brand-mark">P</span><span>Project Showcase</span></a>
-      <nav class="nav-links" aria-label="Project navigation">
-        <a href="../../index.html#projects">All projects</a>
-        <a href="#overview">Overview</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#simulation">Simulation</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="case-hero">
-      <div class="wrap case-hero-grid">
-        <div>
-          <a class="back-link" href="../../index.html#projects">← Back to projects</a>
-          <p class="section-kicker">FEATURED CASE STUDY</p>
-          <h1>Medical Triage<br>Handoff Assistant</h1>
-          <p class="case-lead">
+<header class="site-header">
+<div class="wrap nav-wrap">
+<a class="brand" href="../../index.html"><span class="brand-mark">P</span><span>Project Showcase</span></a>
+<nav aria-label="Project navigation" class="nav-links">
+<a href="../../index.html#projects">All projects</a>
+<a href="#overview">Overview</a>
+<a href="#architecture">Architecture</a>
+<a href="#simulation">Simulation</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="case-hero">
+<div class="wrap case-hero-grid">
+<div>
+<a class="back-link" href="../../index.html#projects">← Back to projects</a>
+<p class="section-kicker">FEATURED CASE STUDY</p>
+<h1>Medical Triage<br/>Handoff Assistant</h1>
+<p class="case-lead">
             An AI-assisted healthcare workflow concept designed to turn unstructured paramedic reports
             into a clean, standardized digital handoff for emergency department staff.
           </p>
-          <div class="case-tags"><span>Healthcare</span><span>AI Workflow</span><span>Voice Processing</span><span>Clinical Data</span><span>Security</span></div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://medical-handoff-assistant-672509862294.us-west2.run.app" target="_blank" rel="noopener noreferrer">Launch simulation ↗</a>
-            <a class="button button-secondary" href="#overview">Read case study</a>
-          </div>
-        </div>
+<div class="case-tags"><span>Healthcare</span><span>AI Workflow</span><span>Voice Processing</span><span>Clinical Data</span><span>Security</span></div>
+<div class="hero-actions">
 
-        <div class="clinical-panel" aria-label="Example ATMIST handoff card">
-          <div class="clinical-topline"><span class="live-dot"></span><span>INCOMING HANDOFF</span><strong>ETA 06:42</strong></div>
-          <div class="patient-row"><div><small>PATIENT</small><strong>45 / Male</strong></div><div><small>STATUS</small><strong class="status-stable">Transmitting</strong></div></div>
-          <div class="atmist-grid">
-            <div><b>A</b><span>Age / Gender</span><strong>45 / Male</strong></div>
-            <div><b>T</b><span>Time</span><strong>14:18</strong></div>
-            <div><b>M</b><span>Mechanism</span><strong>Chest pain</strong></div>
-            <div><b>I</b><span>Injury / Illness</span><strong>Acute symptoms</strong></div>
-            <div><b>S</b><span>Signs / Vitals</span><strong>BP 148/90</strong></div>
-            <div><b>T</b><span>Treatment</span><strong>Aspirin</strong></div>
-          </div>
-          <div class="response-strip"><span>RESPONSE TO TREATMENT</span><strong>Condition being reassessed</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section case-section" id="overview">
-      <div class="wrap case-copy-grid">
-        <div><p class="section-kicker">01 / OVERVIEW</p><h2>A digital scribe for the paramedic handoff.</h2></div>
-        <div class="prose prose-large">
-          <p>
+<a class="button button-secondary" href="#overview">Read case study</a>
+</div>
+</div>
+<div aria-label="Example ATMIST handoff card" class="clinical-panel">
+<div class="clinical-topline"><span class="live-dot"></span><span>INCOMING HANDOFF</span><strong>ETA 06:42</strong></div>
+<div class="patient-row"><div><small>PATIENT</small><strong>45 / Male</strong></div><div><small>STATUS</small><strong class="status-stable">Transmitting</strong></div></div>
+<div class="atmist-grid">
+<div><b>A</b><span>Age / Gender</span><strong>45 / Male</strong></div>
+<div><b>T</b><span>Time</span><strong>14:18</strong></div>
+<div><b>M</b><span>Mechanism</span><strong>Chest pain</strong></div>
+<div><b>I</b><span>Injury / Illness</span><strong>Acute symptoms</strong></div>
+<div><b>S</b><span>Signs / Vitals</span><strong>BP 148/90</strong></div>
+<div><b>T</b><span>Treatment</span><strong>Aspirin</strong></div>
+</div>
+<div class="response-strip"><span>RESPONSE TO TREATMENT</span><strong>Condition being reassessed</strong></div>
+</div>
+</div>
+</section>
+<section class="section case-section" id="overview">
+<div class="wrap case-copy-grid">
+<div><p class="section-kicker">01 / OVERVIEW</p><h2>A digital scribe for the paramedic handoff.</h2></div>
+<div class="prose prose-large">
+<p>
             The concept begins with a paramedic relaying ATMIST details during transport using voice-to-text.
             The system then structures that information into a standardized digital handoff card so the receiving
             emergency department can review a concise summary before the ambulance arrives.
           </p>
-          <p>
+<p>
             The project is centered on healthcare operations, data integrity, and AI-assisted organization rather
             than replacing clinical judgment. Its purpose is to make a fast-moving handoff easier to read, verify,
             and act on.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft case-section" id="workflow">
-      <div class="wrap">
-        <div class="section-heading">
-          <div><p class="section-kicker">02 / WORKFLOW</p><h2>From voice report to structured handoff.</h2></div>
-          <p class="section-intro">A simple data journey connects field reporting with the receiving emergency department.</p>
-        </div>
-        <div class="workflow-rail">
-          <div class="workflow-step"><span>01</span><div class="workflow-icon">◉</div><h3>Voice input</h3><p>Paramedic relays patient and incident details during transport.</p></div>
-          <div class="workflow-arrow">→</div>
-          <div class="workflow-step"><span>02</span><div class="workflow-icon">AI</div><h3>Structured parsing</h3><p>The report is mapped into standardized ATMIST fields.</p></div>
-          <div class="workflow-arrow">→</div>
-          <div class="workflow-step"><span>03</span><div class="workflow-icon">✓</div><h3>Guardrails</h3><p>Clinical rules and validation help surface notable data.</p></div>
-          <div class="workflow-arrow">→</div>
-          <div class="workflow-step"><span>04</span><div class="workflow-icon">ED</div><h3>ED handoff</h3><p>The receiving team gets a readable pre-arrival summary.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section case-section" id="atmist">
-      <div class="wrap">
-        <div class="section-heading">
-          <div><p class="section-kicker">03 / DATA MODEL</p><h2>The ATMIST handover framework.</h2></div>
-          <p class="section-intro">The application organizes incoming information around a high-reliability emergency handover structure.</p>
-        </div>
-        <div class="framework-grid">
-          <div class="framework-card"><b>A</b><h3>Age / Gender</h3><p>Clear patient identification details.</p></div>
-          <div class="framework-card"><b>T</b><h3>Time</h3><p>Time of incident compared with expected arrival.</p></div>
-          <div class="framework-card"><b>M</b><h3>Mechanism / History</h3><p>What happened or what medical event occurred.</p></div>
-          <div class="framework-card"><b>I</b><h3>Injuries / Illness</h3><p>The primary clinical problem being reported.</p></div>
-          <div class="framework-card"><b>S</b><h3>Signs</h3><p>Recent vital signs and important trends.</p></div>
-          <div class="framework-card"><b>T</b><h3>Treatment</h3><p>Interventions already performed in the field.</p></div>
-        </div>
-        <div class="gap-callout">
-          <div class="gap-mark">+</div>
-          <div><p class="section-kicker">ADDITIONAL HANDOFF FIELD</p><h3>Response to Treatment</h3><p>A dedicated statement records whether the patient improved, remained the same, or deteriorated following treatment.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft case-section" id="architecture">
-      <div class="wrap">
-        <div class="section-heading">
-          <div><p class="section-kicker">04 / ARCHITECTURE</p><h2>Core pillars of the prototype.</h2></div>
-          <p class="section-intro">The concept combines capture, parsing, clinical guardrails, secure transmission design, and sign-off.</p>
-        </div>
-        <div class="pillar-grid">
-          <article><span>01</span><h3>Smart Voice & Simulation</h3><p>SpeechRecognition, voice visualizers, offline fallbacks, and one-click case simulations.</p></article>
-          <article><span>02</span><h3>AI ATMIST Parser</h3><p>Maps incoming reports into Age, Time, Mechanism, Injuries, Signs, and Treatment fields.</p></article>
-          <article><span>03</span><h3>Clinical Risk Guardrails</h3><p>Prototype physiological rules include shock index calculations and age-sensitive thresholds.</p></article>
-          <article><span>04</span><h3>Cryptographic Shield</h3><p>Explores encrypted transport concepts including TLS 1.3, Curve25519 key exchange, and randomized IVs.</p></article>
-          <article><span>05</span><h3>Double-Triage Sign-off</h3><p>Digital paramedic certification and electronic audit-trail concepts support accountable handoff.</p></article>
-          <article><span>06</span><h3>Data Journey</h3><p>Connects EMS voice and telemetry through parsing, alerts, signatures, and secure transmission.</p></article>
-        </div>
-        <p class="compliance-note"><strong>Prototype note:</strong> Security and healthcare-compliance features shown here describe the project architecture and design intent; they are not presented as an independent certification of regulatory compliance.</p>
-      </div>
-    </section>
-
-    <section class="section case-section" id="simulation">
-      <div class="wrap media-grid">
-        <div class="media-copy">
-          <p class="section-kicker">05 / INTERACTIVE DEMO</p>
-          <h2>Test the handoff simulation.</h2>
-          <p>The interactive prototype includes sample simulation cases. Load a case, then use the extraction action to see how unstructured information is organized into output data.</p>
-          <a class="button button-primary" href="https://medical-handoff-assistant-672509862294.us-west2.run.app" target="_blank" rel="noopener noreferrer">Launch Medical Triage Handoff Simulation ↗</a>
-        </div>
-        <div class="promo-frame"><img src="../../assets/medical-triage-promo.png" alt="Promotional illustration for the Medical Triage Handoff Assistant showing paramedic input, AI data conversion, and emergency department receipt."></div>
-      </div>
-    </section>
-
-    <section class="next-project"><div class="wrap"><a href="../../index.html#projects"><span>Return to portfolio</span><strong>Explore selected projects →</strong></a></div></section>
-  </main>
-
-  <footer><div class="wrap footer-inner"><span>Project Showcase</span><span>Medical Triage Handoff Assistant</span></div></footer>
+</div>
+</div>
+</section>
+<section class="section section-soft case-section" id="workflow">
+<div class="wrap">
+<div class="section-heading">
+<div><p class="section-kicker">02 / WORKFLOW</p><h2>From voice report to structured handoff.</h2></div>
+<p class="section-intro">A simple data journey connects field reporting with the receiving emergency department.</p>
+</div>
+<div class="workflow-rail">
+<div class="workflow-step"><span>01</span><div class="workflow-icon">◉</div><h3>Voice input</h3><p>Paramedic relays patient and incident details during transport.</p></div>
+<div class="workflow-arrow">→</div>
+<div class="workflow-step"><span>02</span><div class="workflow-icon">AI</div><h3>Structured parsing</h3><p>The report is mapped into standardized ATMIST fields.</p></div>
+<div class="workflow-arrow">→</div>
+<div class="workflow-step"><span>03</span><div class="workflow-icon">✓</div><h3>Guardrails</h3><p>Clinical rules and validation help surface notable data.</p></div>
+<div class="workflow-arrow">→</div>
+<div class="workflow-step"><span>04</span><div class="workflow-icon">ED</div><h3>ED handoff</h3><p>The receiving team gets a readable pre-arrival summary.</p></div>
+</div>
+</div>
+</section>
+<section class="section case-section" id="atmist">
+<div class="wrap">
+<div class="section-heading">
+<div><p class="section-kicker">03 / DATA MODEL</p><h2>The ATMIST handover framework.</h2></div>
+<p class="section-intro">The application organizes incoming information around a high-reliability emergency handover structure.</p>
+</div>
+<div class="framework-grid">
+<div class="framework-card"><b>A</b><h3>Age / Gender</h3><p>Clear patient identification details.</p></div>
+<div class="framework-card"><b>T</b><h3>Time</h3><p>Time of incident compared with expected arrival.</p></div>
+<div class="framework-card"><b>M</b><h3>Mechanism / History</h3><p>What happened or what medical event occurred.</p></div>
+<div class="framework-card"><b>I</b><h3>Injuries / Illness</h3><p>The primary clinical problem being reported.</p></div>
+<div class="framework-card"><b>S</b><h3>Signs</h3><p>Recent vital signs and important trends.</p></div>
+<div class="framework-card"><b>T</b><h3>Treatment</h3><p>Interventions already performed in the field.</p></div>
+</div>
+<div class="gap-callout">
+<div class="gap-mark">+</div>
+<div><p class="section-kicker">ADDITIONAL HANDOFF FIELD</p><h3>Response to Treatment</h3><p>A dedicated statement records whether the patient improved, remained the same, or deteriorated following treatment.</p></div>
+</div>
+</div>
+</section>
+<section class="section section-soft case-section" id="architecture">
+<div class="wrap">
+<div class="section-heading">
+<div><p class="section-kicker">04 / ARCHITECTURE</p><h2>Core pillars of the prototype.</h2></div>
+<p class="section-intro">The concept combines capture, parsing, clinical guardrails, secure transmission design, and sign-off.</p>
+</div>
+<div class="pillar-grid">
+<article><span>01</span><h3>Smart Voice &amp; Simulation</h3><p>SpeechRecognition, voice visualizers, offline fallbacks, and one-click case simulations.</p></article>
+<article><span>02</span><h3>AI ATMIST Parser</h3><p>Maps incoming reports into Age, Time, Mechanism, Injuries, Signs, and Treatment fields.</p></article>
+<article><span>03</span><h3>Clinical Risk Guardrails</h3><p>Prototype physiological rules include shock index calculations and age-sensitive thresholds.</p></article>
+<article><span>04</span><h3>Cryptographic Shield</h3><p>Explores encrypted transport concepts including TLS 1.3, Curve25519 key exchange, and randomized IVs.</p></article>
+<article><span>05</span><h3>Double-Triage Sign-off</h3><p>Digital paramedic certification and electronic audit-trail concepts support accountable handoff.</p></article>
+<article><span>06</span><h3>Data Journey</h3><p>Connects EMS voice and telemetry through parsing, alerts, signatures, and secure transmission.</p></article>
+</div>
+<p class="compliance-note"><strong>Prototype note:</strong> Security and healthcare-compliance features shown here describe the project architecture and design intent; they are not presented as an independent certification of regulatory compliance.</p>
+</div>
+</section>
+<section class="section case-section" id="simulation">
+<div class="wrap media-grid">
+<div class="media-copy">
+<p class="section-kicker">05 / INTERACTIVE DEMO</p>
+<h2>Test the handoff simulation.</h2>
+<p>The interactive prototype includes sample simulation cases. Load a case, then use the extraction action to see how unstructured information is organized into output data.</p>
+<a class="button button-primary" href="https://medical-handoff-assistant-672509862294.us-west2.run.app" rel="noopener noreferrer" target="_blank">Launch Medical Triage Handoff Simulation ↗</a>
+</div>
+<div class="promo-frame"><img alt="Promotional illustration for the Medical Triage Handoff Assistant showing paramedic input, AI data conversion, and emergency department receipt." src="../../assets/medical-triage-promo.png"/></div>
+</div>
+</section>
+<section class="next-project"><div class="wrap"><a href="../../index.html#projects"><span>Return to portfolio</span><strong>Explore selected projects →</strong></a></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>Project Showcase</span><span>Medical Triage Handoff Assistant</span></div></footer>
 </body>
 </html>
