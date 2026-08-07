@@ -1605,3 +1605,107 @@ footer {
 @media (max-width: 760px) {
   .triage-mark { font-size: clamp(2.15rem, 10vw, 3.3rem) !important; }
 }
+
+
+/* v16 — NotebookLM project */
+.visual-notebook {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(255, 197, 70, .24), transparent 27%),
+    radial-gradient(circle at 15% 88%, rgba(255, 119, 53, .25), transparent 33%),
+    linear-gradient(145deg, #2a1f14 0%, #51301a 50%, #7a421d 100%);
+}
+.visual-notebook::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.72), transparent);
+  pointer-events: none;
+}
+.notebook-visual-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.notebook-mark {
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  line-height: .95;
+  letter-spacing: -.045em;
+  font-weight: 650;
+  color: #fff9ef;
+}
+.notebook-mark span { color: #ffd56c; }
+.notebook-submark {
+  max-width: 420px;
+  font-size: clamp(.95rem, 1.5vw, 1.2rem);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: rgba(255,249,239,.82);
+}
+.notebook-document-content .prompt-block {
+  margin: 18px 0 24px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 196, 85, .22);
+  border-radius: 14px;
+  background: rgba(126, 73, 25, .13);
+}
+.notebook-output-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+.notebook-output-grid > div {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.025);
+}
+.notebook-output-grid strong {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #f0b85a;
+}
+.notebook-output-grid span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+  color: var(--text);
+}
+.notebook-output-grid p { margin: 0; }
+.notebook-callout {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border-left: 3px solid #e0a249;
+  background: rgba(224,162,73,.08);
+  border-radius: 0 14px 14px 0;
+}
+.notebook-callout strong { color: #f1c279; }
+.notebook-callout p { margin: 7px 0 0; }
+.notebook-link { border-color: rgba(239, 181, 80, .5); }
+.source-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+.source-list p {
+  margin: 0;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255,255,255,.02);
+}
+.source-list span { color: var(--muted); }
+@media (max-width: 720px) {
+  .notebook-output-grid { grid-template-columns: 1fr; }
+  .notebook-mark { font-size: clamp(2.4rem, 13vw, 3.6rem); }
+}

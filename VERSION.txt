@@ -1,1 +1,2 @@
-v15 - about removed, title lighter
+Client Portfolio — v16
+Added Project 02: Beginner Welding Learning Kit / NotebookLM

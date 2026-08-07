@@ -6,8 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Project Showcase</title>
 <meta content="Selected projects exploring AI-assisted workflows, structured information, and visual concepts." name="description"/>
-<link href="style.css?v=15" rel="stylesheet"/>
-
+<link href="style.css?v=16" rel="stylesheet"/>
 <style id="v11-critical-fixes">
 /* Critical v11 cleanup: intentionally inline so stale external CSS cannot reintroduce these UI elements. */
 .triage-pulse, .triage-visual-copy .triage-pulse { display:none !important; width:0 !important; height:0 !important; background:none !important; clip-path:none !important; }
@@ -87,7 +86,6 @@
 <div class="visual-badge">HEALTHCARE WORKFLOW</div>
 <div class="triage-visual-copy">
 <span class="triage-mark">MEDI-TRIAGE</span>
-
 </div>
 <div class="visual-caption">AI-ASSISTED HANDOFF / SIMULATION</div>
 </div><div class="project-card-body">
@@ -99,8 +97,6 @@
                 An AI-assisted healthcare workflow prototype that converts a paramedic's spoken field report
                 into a structured ATMIST handoff card for emergency department staff before the ambulance arrives.
               </p>
-
-
 </div></div><details class="project-details">
 <summary aria-label="Toggle full project details" title="Toggle full project details"><span aria-hidden="true" class="details-icon"></span></summary>
 <div class="project-details-content full-document-content">
@@ -156,14 +152,86 @@
 <h5>Marketing Advertisement for the Medical Triage Handoff Assistant App</h5>
 <img alt="Medi-Triage Handoff Assistant marketing advertisement showing paramedic input, AI structured handoff, hospital receipt, and benefits including efficiency, clarity, and readiness." class="document-promo-image" src="assets/medical-triage-promo.png"/>
 </section>
-
 </div>
 </details></article>
-<article class="project-row project-placeholder"><div class="project-summary-grid"><div class="project-visual visual-two"><div class="visual-number">02</div><div class="visual-caption">NEXT PROJECT</div></div><div class="project-card-body">
-<div class="project-meta"><span>Coming soon</span></div>
-<h3>Additional project</h3>
-<p>Another selected project can be added here as the portfolio grows.</p>
-</div></div></article>
+
+<article class="project-row notebook-project">
+<div class="project-summary-grid">
+<div class="project-visual visual-notebook">
+<div class="visual-badge">AI KNOWLEDGE SYNTHESIS</div>
+<div class="notebook-visual-copy">
+<span class="notebook-mark">NOTEBOOK<span>LM</span></span>
+<span class="notebook-submark">BEGINNER WELDING<br/>LEARNING KIT</span>
+</div>
+<div class="visual-caption">SOURCE-GROUNDED EDUCATIONAL CONTENT</div>
+</div>
+<div class="project-card-body">
+<div class="project-meta">
+<span>NotebookLM</span><span>AI Research</span><span>Technical Education</span>
+</div>
+<h3>Beginner Welding Learning Kit</h3>
+<p class="project-teaser">
+        A source-grounded AI content synthesis project using NotebookLM to turn technical manuals and transcripts
+        into beginner-focused reference material, troubleshooting content, an audio overview, and a visual slide deck.
+      </p>
+</div>
+</div>
+<details class="project-details">
+<summary aria-label="Toggle full project details" title="Toggle full project details"><span aria-hidden="true" class="details-icon"></span></summary>
+<div class="project-details-content full-document-content notebook-document-content">
+<div class="document-header">
+<p class="detail-label">Project Presentation</p>
+<h4>Beginner Welder “Cheat Sheet”</h4>
+<p><strong>AI Tool Implemented:</strong> NotebookLM</p>
+</div>
+<section class="document-section">
+<h5>Quick-Start Cheat Sheet</h5>
+<p class="prompt-block"><strong>PROMPT:</strong> Based on the provided documents and transcripts, create a 'Quick-Start Cheat Sheet' for a beginner. Include a 3-column table: Welding Method, Best Use Case, Difficulty Level. Then, list the 5 most critical safety rules that appear across all sources.</p>
+<p>The resulting cheat sheet compared MIG, Stick, and TIG welding by intended use and relative learning difficulty, then synthesized five recurring safety priorities from the provided sources: eye protection, skin protection, ventilation, fire prevention, and use of an appropriate work surface.</p>
+<div class="notebook-output-grid">
+<div><strong>01</strong><span>Method comparison</span><p>MIG, Stick, and TIG organized into a beginner-friendly three-column reference.</p></div>
+<div><strong>02</strong><span>Safety synthesis</span><p>Five recurring safety themes distilled from multiple technical sources.</p></div>
+</div>
+</section>
+<section class="document-section">
+<h5>MIG Welding Troubleshooting Table</h5>
+<p class="prompt-block"><strong>Next PROMPT:</strong> Create a 'Troubleshooting Table' for MIG welding. List common defects, like spatter or burn-through, what likely caused them, and the specific adjustment needed to fix them (cite your sources).</p>
+<p>NotebookLM generated a structured troubleshooting reference covering common symptoms such as burn-through, excessive spatter, wire burn-back, lack of penetration, undercutting, porosity, poor fusion, and irregular popping or cracking sounds. Each entry connected the observed defect to likely causes and a corresponding corrective category.</p>
+</section>
+<section class="document-section">
+<h5>Explaining “The Puddle” for a Beginner</h5>
+<p class="prompt-block"><strong>Next PROMPT:</strong> Explain the concept of 'The Puddle' as if you were talking to a total beginner. Use an analogy to make it easy to understand, and explain why mastering this is more important than equipment settings.</p>
+<p>The response introduced the molten weld puddle through a wax-and-heat-gun analogy, then used the source material to challenge part of the prompt itself. Rather than simply accepting the assumption that technique is always more important than equipment settings, NotebookLM reported that the provided sources emphasized correct machine settings first, followed by puddle control as the key to physical technique once the machine is configured appropriately.</p>
+<div class="notebook-callout"><strong>Source-grounded behavior</strong><p>An important part of the experiment was seeing whether the AI would preserve what the source material actually said instead of blindly following an incorrect premise embedded in the prompt.</p></div>
+</section>
+<section class="document-section">
+<h5>Pushing vs. Dragging the Torch</h5>
+<p class="prompt-block"><strong>NEXT PROMPT:</strong> Explain the difference between “pushing” and “dragging” the torch.</p>
+<p>The generated explanation contrasted the two travel orientations in plain language and summarized why the referenced sources recommended different approaches depending on the welding position and application.</p>
+</section>
+<section class="document-section">
+<h5>Audio Overview</h5>
+<p>To test the AI's ability to synthesize technical manuals into accessible formats, an Audio Overview was generated. The project describes this as a conversational, podcast-style translation of complex safety protocols and welding physics, demonstrating the potential for AI to act as an on-demand tutor for hands-on technical subjects.</p>
+<a class="document-launch notebook-link" href="https://drive.google.com/file/d/10UYWWzxMONCBsM4qDVx7rHeZFu7mfJR-/view?usp=sharing" rel="noopener noreferrer" target="_blank">Listen to Audio Overview ↗</a>
+</section>
+<section class="document-section">
+<h5>Beginner Slide Deck</h5>
+<p class="prompt-block"><strong>NEXT PROMPT:</strong> Create a slide deck for beginners with step by step instructions. Be sure to include safety protocols and equipment. Use images to ensure understanding of steps and equipment.</p>
+<p>The final deliverable was a Google Slide Deck that translated the same technical source material into an easier-to-follow visual presentation, providing another example of using NotebookLM to reformat dense technical knowledge for a different learning medium.</p>
+<a class="document-launch notebook-link" href="https://docs.google.com/presentation/d/1-c9U4RT8XS85YAU-Kf0gh0AUlrLDwUuZhTsAIrPJ47Q/edit?usp=sharing" rel="noopener noreferrer" target="_blank">View Beginner Welding Presentation ↗</a>
+</section>
+<section class="document-section source-section">
+<h5>Sources Used in NotebookLM</h5>
+<div class="source-list">
+<p><strong>University of Florida Design Lab</strong><br/><span>EML2322L Welding reference PDF</span></p>
+<p><strong>Hobart Brothers</strong><br/><span>Helpful Hints: Basic Welding</span></p>
+<p><strong>Websites referenced within the source material</strong><br/><span>ArcAcademy.com · welding.org · hobartbrothers.com</span></p>
+</div>
+</section>
+</div>
+</details>
+</article>
+
 <article class="project-row project-placeholder"><div class="project-summary-grid"><div class="project-visual visual-three"><div class="visual-number">03</div><div class="visual-caption">NEXT PROJECT</div></div><div class="project-card-body">
 <div class="project-meta"><span>Coming soon</span></div>
 <h3>Additional project</h3>
