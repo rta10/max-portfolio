@@ -1,30 +1,17 @@
-# GitHub Project Showcase Demo
+# Project Showcase
 
-This version is intentionally designed as a project showcase rather than a software developer portfolio.
+Static GitHub Pages portfolio.
 
-It works well for:
-- Google Docs
-- prompt-based projects
-- visual experiments
-- research notes
-- external project links
-- certifications
+## Current featured project
 
-## Publishing with GitHub Pages
+- Medical Triage Handoff Assistant
+  - Case study: `projects/medical-triage-handoff/index.html`
+  - Interactive simulation: https://medical-handoff-assistant-672509862294.us-west2.run.app
 
-1. Upload `index.html` and `style.css` to the root of a public GitHub repository.
-2. Go to **Settings > Pages**.
-3. Select **Deploy from a branch**.
-4. Choose `main` and `/ (root)`.
-5. Save.
+## GitHub Pages
 
-## Customizing
+Publish from the `main` branch and `/ (root)` in **Settings → Pages**.
 
-Replace:
-- Project titles and summaries
-- `href="#"` links with Google Docs, galleries, videos, or other project URLs
-- Certification names and credential URLs
-- Email address
-- GitHub profile URL
+## Before delivery
 
-No frameworks, build tools, or plugins are required.
+Replace placeholder contact and GitHub profile links in `index.html` with the client's final information. Add credential links when supplied.
