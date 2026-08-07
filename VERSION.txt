@@ -1,2 +1,2 @@
-Client Portfolio — v37
-Added Google Prompting Essentials Credly credential as credential 07.
+Client Portfolio — v38
+Added Google AI for Brainstorming and Planning Credly credential.
