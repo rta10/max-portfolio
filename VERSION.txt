@@ -1,2 +1,2 @@
-Client Portfolio — v42
-Added Use AI as a Creative or Expert Partner credential.
+Client Portfolio — v43
+Updated Certifications terminology across the site and added Google AI for Data Analysis.
