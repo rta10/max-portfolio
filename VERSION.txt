@@ -1,2 +1,3 @@
-Client Portfolio - Triage v6
-Full original Triage App Project.docx text is included inside the expandable first project row.
+CLIENT PORTFOLIO TRIAGE v7
+Full 3-page source document embedded in expandable project row.
+Collapsed row visibly labeled Full document included.
