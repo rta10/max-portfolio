@@ -1532,3 +1532,43 @@ footer {
     min-height: 0 !important;
   }
 }
+
+
+/* v10 — cleaner ATMIST artwork and icon-only project expander */
+.triage-pulse {
+  display: none !important;
+}
+
+.triage-visual-copy {
+  gap: 0 !important;
+}
+
+.project-row > .project-details summary,
+.project-row > .project-details[open] summary {
+  justify-content: flex-end !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+/* Remove all visible show/hide copy; the native details control remains accessible by aria-label. */
+.project-row > .project-details summary > span:not(.details-icon) {
+  display: none !important;
+}
+
+.project-details[open] summary > span:first-child::after,
+.project-row > .project-details[open] summary > span:first-child::after {
+  content: none !important;
+  display: none !important;
+}
+
+.project-row > .project-details summary .details-icon {
+  margin-left: auto;
+}
+
+@media (max-width: 900px) {
+  .project-row > .project-details summary,
+  .project-row > .project-details[open] summary {
+    padding-left: 26px !important;
+    padding-right: 26px !important;
+  }
+}
