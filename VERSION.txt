@@ -1,2 +1,2 @@
-Client Portfolio — v28
-Legacy Optics image captions now include phase names and source-document reference filenames.
+Client Portfolio — v29
+Fixed Legacy Optics image reference caption layout and filename styling.

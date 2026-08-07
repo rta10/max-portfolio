@@ -2008,7 +2008,7 @@ footer {
 
 
 /* v28 — Legacy Optics image/reference labels */
-.legacy-iteration-gallery figcaption,
+.legacy-image-grid figcaption,
 .legacy-final-figure figcaption {
   display: grid;
   gap: 6px;
@@ -2016,7 +2016,7 @@ footer {
   color: var(--muted);
   line-height: 1.45;
 }
-.legacy-iteration-gallery figcaption strong,
+.legacy-image-grid figcaption strong,
 .legacy-final-figure figcaption strong {
   color: var(--text);
   font-size: .92rem;
@@ -2029,7 +2029,7 @@ footer {
   letter-spacing: .11em;
   text-transform: uppercase;
 }
-.legacy-iteration-gallery figcaption code,
+.legacy-image-grid figcaption code,
 .legacy-final-figure figcaption code {
   display: block;
   max-width: 100%;
@@ -2049,3 +2049,63 @@ footer {
 }
 .legacy-final-figure { margin: 0; }
 .legacy-final-figure img { display:block; width:100%; height:auto; border-radius:14px; }
+
+
+/* v29 — fix Legacy Optics metadata caption selector and presentation */
+.legacy-image-grid figcaption,
+.legacy-final-figure figcaption {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  text-align: center;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 400 !important;
+}
+.legacy-image-grid figcaption strong,
+.legacy-final-figure figcaption strong {
+  display: block;
+  color: var(--text);
+  font-size: .9rem;
+  font-weight: 750;
+  letter-spacing: .01em;
+}
+.legacy-image-grid .legacy-ref-label,
+.legacy-final-figure .legacy-ref-label {
+  display: block;
+  margin-top: 3px;
+  color: #8795a9;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.legacy-image-grid figcaption code,
+.legacy-final-figure figcaption code {
+  display: inline-block;
+  width: auto;
+  max-width: 92%;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.035);
+  color: #b8c4d4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: .66rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+.legacy-ref-unspecified {
+  display: inline-block;
+  max-width: 92%;
+  padding: 6px 10px;
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  font-size: .68rem;
+  font-style: normal;
+}
