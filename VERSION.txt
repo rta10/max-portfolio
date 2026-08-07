@@ -1,2 +1,2 @@
-Client Portfolio — v20
-NotebookLM project rebuilt as full native HTML matching the supplied DOCX content.
+Client Portfolio — v21
+Added Project 03: Renegade GT – Creative Concept & Launch Strategy

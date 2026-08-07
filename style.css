@@ -1766,3 +1766,50 @@ footer {
   .notebook-document-content .document-section { padding-top:26px; margin-top:26px; }
   .notebook-document-content .prompt-block { padding:16px; }
 }
+
+
+/* v21 — Renegade GT project */
+.visual-renegade {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(232, 67, 67, .22), transparent 27%),
+    radial-gradient(circle at 18% 82%, rgba(151, 160, 176, .19), transparent 33%),
+    linear-gradient(145deg, #151a22 0%, #242b34 50%, #441d21 100%);
+}
+.visual-renegade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.72), transparent);
+  pointer-events: none;
+}
+.renegade-visual-copy { position:relative; z-index:1; display:flex; align-items:center; }
+.renegade-mark {
+  font-size: clamp(2.35rem, 4.6vw, 4.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  color: #f4f6f8;
+}
+.renegade-project .project-summary-grid { align-items:stretch; }
+.renegade-project .project-visual { min-height:340px; }
+.renegade-table td:first-child { width:22%; }
+.renegade-images-section { overflow:hidden; }
+.renegade-image-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:24px; }
+.renegade-image-grid figure { margin:0; padding:12px; border:1px solid var(--line); border-radius:16px; background:rgba(255,255,255,.025); }
+.renegade-image-grid img, .renegade-final-block img { display:block; width:100%; height:auto; border-radius:10px; }
+.renegade-image-grid figcaption { margin-top:10px; color:var(--muted); font-size:.76rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; }
+.renegade-final-block { margin-top:32px; padding-top:28px; border-top:1px solid var(--line); }
+.renegade-final-block h5 { margin-bottom:18px; }
+.renegade-final-block img { max-width:687px; margin:0 auto; border:1px solid var(--line); }
+@media (max-width: 900px) { .renegade-image-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width: 760px) {
+  .renegade-mark { font-size: clamp(2.15rem, 10vw, 3.3rem); }
+  .renegade-project .project-visual { min-height:280px; }
+  .renegade-image-grid { grid-template-columns:1fr; }
+}
