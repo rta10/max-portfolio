@@ -1470,3 +1470,65 @@ footer {
     padding: 16px 28px 34px !important;
   }
 }
+
+
+/* v9 — eliminate left-column gap under project artwork */
+.project-summary-grid {
+  display: flex !important;
+  align-items: stretch !important;
+  min-height: 0 !important;
+}
+
+.project-summary-grid > .project-visual,
+.project-row.featured-project .project-summary-grid > .project-visual {
+  flex: 0 0 45% !important;
+  width: 45% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: stretch !important;
+}
+
+.project-summary-grid > .project-card-body,
+.project-row.featured-project .project-summary-grid > .project-card-body {
+  flex: 1 1 55% !important;
+  width: auto !important;
+  min-height: 340px !important;
+}
+
+/* The expand control lives below both columns, so there is never an empty block under the artwork. */
+.project-row > .project-details {
+  clear: both;
+}
+
+/* No document/page-count status badge in the project summary. */
+.document-status,
+.document-badge,
+.full-document-badge,
+.full-document-status {
+  display: none !important;
+}
+
+.project-details[open] summary > span:first-child::after,
+.project-row > .project-details[open] summary > span:first-child::after {
+  content: "Hide full project details" !important;
+}
+
+@media (max-width: 900px) {
+  .project-summary-grid {
+    display: block !important;
+  }
+
+  .project-summary-grid > .project-visual,
+  .project-row.featured-project .project-summary-grid > .project-visual,
+  .project-row.project-placeholder .project-summary-grid > .project-visual {
+    width: 100% !important;
+    min-height: 230px !important;
+    height: 230px !important;
+  }
+
+  .project-summary-grid > .project-card-body,
+  .project-row.featured-project .project-summary-grid > .project-card-body {
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+}

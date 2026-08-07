@@ -1,1 +1,4 @@
-Client Portfolio — Medical Triage — v8 balanced rows, full-width expandable document, project CTA links removed
+v9-gap-fix
+- Removed full document/page-count indicator
+- ATMIST artwork now stretches to the full height of the summary row
+- Expand control remains below both columns
