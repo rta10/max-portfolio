@@ -1,2 +1,2 @@
-Client Portfolio — v23
-Unified all project-row heading sizes, including Medical Triage Handoff Assistant.
+Client Portfolio — v24
+Restored complete Smart HUD Riser Project 04 and unified all project-card headings

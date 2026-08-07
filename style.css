@@ -1882,18 +1882,14 @@ footer {
 }
 
 
-/* v23 — unified project-card title typography */
-.project-summary-grid .project-card-body h3,
-.project-row.featured-project .project-summary-grid .project-card-body h3 {
-  margin: 0 0 12px !important;
-  font-size: 1.65rem !important;
-  line-height: 1.18 !important;
-  letter-spacing: -0.03em !important;
-  font-weight: 700 !important;
+/* v24 — keep all project-card headings consistent */
+.project-row .project-card-body h3,
+.project-row.featured-project .project-card-body h3,
+.featured-project h3 {
+  margin: 0 0 18px !important;
+  font-size: clamp(1.55rem, 2.3vw, 2rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.025em !important;
+  font-weight: 750 !important;
 }
-@media (max-width: 760px) {
-  .project-summary-grid .project-card-body h3,
-  .project-row.featured-project .project-summary-grid .project-card-body h3 {
-    font-size: 1.5rem !important;
-  }
-}
+.project-end-marker { margin: 32px 0 0; text-align:center; font-weight:800; letter-spacing:.08em; color:var(--muted); }
