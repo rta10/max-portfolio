@@ -1709,3 +1709,21 @@ footer {
   .notebook-output-grid { grid-template-columns: 1fr; }
   .notebook-mark { font-size: clamp(2.4rem, 13vw, 3.6rem); }
 }
+
+
+/* v18 — align NotebookLM visual treatment with Medi-Triage */
+.notebook-visual-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.notebook-mark {
+  font-size: clamp(2.35rem, 4.6vw, 4.25rem) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 600 !important;
+}
+.notebook-submark { display: none !important; }
+@media (max-width: 760px) { .notebook-mark { font-size: clamp(2.15rem, 10vw, 3.3rem) !important; } }

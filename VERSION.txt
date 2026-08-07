@@ -1,2 +1,2 @@
-Client Portfolio — v16
-Added Project 02: Beginner Welding Learning Kit / NotebookLM
+Client Portfolio — v18
+Removed NotebookLM visual subheading and aligned Project 02 header styling with Medi-Triage
