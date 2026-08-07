@@ -1,1 +1,1 @@
-v12 - MEDI-TRIAGE visual title
+v15 - about removed, title lighter

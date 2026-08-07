@@ -1593,3 +1593,15 @@ footer {
     font-size: clamp(2.35rem, 11vw, 3.7rem) !important;
   }
 }
+
+
+/* v15 — lighter Medi-Triage title */
+.triage-mark {
+  font-size: clamp(2.35rem, 4.6vw, 4.25rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.02 !important;
+}
+@media (max-width: 760px) {
+  .triage-mark { font-size: clamp(2.15rem, 10vw, 3.3rem) !important; }
+}
