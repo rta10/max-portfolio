@@ -15,3 +15,6 @@ Publish from the `main` branch and `/ (root)` in **Settings → Pages**.
 ## Before delivery
 
 Replace placeholder contact and GitHub profile links in `index.html` with the client's final information. Add credential links when supplied.
+
+
+Version 12: featured project visual title changed from ATMIST to MEDI-TRIAGE.

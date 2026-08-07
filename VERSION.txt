@@ -1,1 +1,1 @@
-v11 - pulse removed, icon-only expander, cache-busted CSS
+v12 - MEDI-TRIAGE visual title
