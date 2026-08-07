@@ -763,7 +763,6 @@ footer {
 .visual-badge { position: relative; z-index: 1; align-self: flex-start; padding: 7px 10px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: rgba(5,19,33,.42); font-size: .68rem; font-weight: 800; letter-spacing: .1em; }
 .triage-visual-copy { position: relative; z-index: 1; display: flex; align-items: center; gap: 25px; }
 .triage-mark { font-size: clamp(3.4rem, 7vw, 6rem); line-height: 1; font-weight: 900; letter-spacing: -.07em; }
-.triage-pulse { width: 110px; height: 40px; background: linear-gradient(90deg, transparent 0 7%, #85f4e9 7% 10%, transparent 10% 20%, transparent 20% 25%, #85f4e9 25% 28%, transparent 28% 34%, transparent 34% 40%, #85f4e9 40% 43%, transparent 43% 48%, transparent 48% 54%, #85f4e9 54% 58%, transparent 58%); clip-path: polygon(0 48%, 18% 48%, 24% 20%, 32% 78%, 39% 5%, 48% 90%, 55% 48%, 100% 48%, 100% 55%, 56% 55%, 49% 100%, 39% 20%, 33% 88%, 23% 35%, 19% 55%, 0 55%); opacity: .85; }
 .project-placeholder { opacity: .72; }
 .credential-placeholder { cursor: default; }
 
@@ -1535,10 +1534,6 @@ footer {
 
 
 /* v10 — cleaner ATMIST artwork and icon-only project expander */
-.triage-pulse {
-  display: none !important;
-}
-
 .triage-visual-copy {
   gap: 0 !important;
 }
@@ -1572,3 +1567,14 @@ footer {
     padding-right: 26px !important;
   }
 }
+
+
+/* v11 authoritative cleanup */
+.triage-visual-copy { gap: 0 !important; }
+.project-row .triage-pulse, .triage-pulse { display:none !important; width:0 !important; height:0 !important; background:none !important; clip-path:none !important; }
+.project-row > .project-details > summary { justify-content:flex-end !important; font-size:0 !important; color:transparent !important; }
+.project-row > .project-details > summary > *:not(.details-icon) { display:none !important; }
+.project-row > .project-details > summary::before,
+.project-row > .project-details > summary::after,
+.project-row > .project-details[open] > summary::before,
+.project-row > .project-details[open] > summary::after { content:none !important; display:none !important; }
