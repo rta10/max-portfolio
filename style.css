@@ -1578,3 +1578,7 @@ footer {
 .project-row > .project-details > summary::after,
 .project-row > .project-details[open] > summary::before,
 .project-row > .project-details[open] > summary::after { content:none !important; display:none !important; }
+
+
+/* v13: fit the descriptive project title cleanly in the visual panel */
+.visual-triage .triage-mark { font-size: clamp(2.8rem, 5.4vw, 5.25rem) !important; letter-spacing: -.055em !important; white-space: nowrap; }
